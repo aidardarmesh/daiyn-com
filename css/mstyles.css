@@ -1,0 +1,127 @@
+/************************************************* COMMON STYLES ***********************************************/
+* { box-sizing: border-box; }
+body{ background-color: #edeef0; font-family: "FuturaPTLight", Calibri, sans-serif; }
+
+/************************************************* MOBILE PHONES ***********************************************/
+/************************************************* OVERLAY ***********************************************/
+#overlay{ display: none; position: fixed; left: 0; top: 0; background-color: #fff; min-height: 100%; width: 100%; z-index: 99999999999; }
+.overlay-container{ display: block; position: relative; text-align: center; margin: 250px auto 0; }
+.overlay-container p{ font-size: 22px; }
+.loader{ display: block; margin: 20px auto 0; border: 5px solid #f3f3f3; border-top: 5px solid #1d3d51; border-radius: 50%; width: 100px; height: 100px; animation: spin 2s linear infinite; }
+@keyframes spin{ 
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/************************************************* BADGE ***********************************************/
+#badge{ width: 100%; height: 78px; background-color: #fff; }
+#badge-cont{ width: 300px; height: 78px; margin: 0 auto; }
+.badge-img{ float: left; width: 64px; height: 64px; margin-top: 7px; background-size: contain; background-image: url("../images/badge.png"); background-repeat: no-repeat; }
+.badge-text{ float: left; width: 142px; height: 40px; margin-top: 15px; }
+.badge-title{ font: 22px "FuturaPTBock", Calibri, sans-serif; }
+.badge-desc{ font-size: 14px; color: #b0b0b0; }
+.badge-btn{ display: inline-block; float; left; font-size: 18px; text-align: center; line-height: 40px; text-transform: uppercase; color: #fff; background-color: #1d3d51; width: 94px; height: 40px; border-radius: 7px; margin-top: 17px; }
+
+/************************************************* NAV ***********************************************/
+#nav{ width: 100%; height: 120px; background-color: #1d3d51; }
+#logo{ margin: 0 auto; width: 320px; height: 120px; background-size: contain; background-image: url("../images/logo_sm.png"); background-repeat: no-repeat;  }
+
+/************************************************* BODY ***********************************************/
+#body{ width: 100%; margin: 0 auto; font-size: 20px; font-size: 20px; }
+
+/************************************************* EXTS ***********************************************/
+.cont{ background-color: #fff; border-radius: 2px; border: 1px solid #b0b9c0; }
+#exts{ width: 100%; height: 44px; padding: 9px 30px; margin: 16px auto 16px; line-height: 26px; }
+#exts div{ display: inline-block; float: left; }
+#jpeg-sm{ background-image: url("../images/jpeg_sm.png"); }
+#jpg-sm{ background-image: url("../images/jpg_sm.png"); }
+#png-sm{ background-image: url("../images/png_sm.png"); }
+#doc-sm{ background-image: url("../images/doc_sm.png"); }
+#docx-sm{ background-image: url("../images/docx_sm.png"); }
+#pdf-sm{ background-image: url("../images/pdf_sm.png"); }
+.icon-sm{ position: relative; width: 26px; height: 26px; margin-left: 12px; background-repeat: no-repeat; background-position-x: right; }
+
+/************************************************* DROPZONE ***********************************************/
+#dropzone{ width: 100%; height: 150px; margin: 0 auto 16px; border-width: 1px; border-style: dashed; border-color: #a7b8ca; cursor: pointer; }
+.ondrop{ border-color: #1d3d51; }
+.drop-cont{ width: 100%; text-align: center; margin-top: 37px; }
+.drop-icon{ width: 51px; height: 51px; background-image: url("../images/drop-icon.png"); background-repeat: no-repeat; background-position: center; margin: 0 auto; }
+.drop-text{ color: #a7b8ca; margin-top: 5px; }
+.dragover{ border-color: #1d3d51!important; }
+
+/************************************************* FILES ***********************************************/
+#files{ position: relative; display: none; width: 100%; padding: 9px 30px; margin: 0 auto 16px; }
+#files-cont{ height: 110px; margin-top: 10px; margin-bottom: 10px; }
+.btn{ position: absolute; width: 33px; height: 110px; background-repeat: no-repeat; background-position: 0 50%; cursor: pointer; }
+#left-btn{ left: 30px; height: 110px; background-image: url("../images/left-btn.png"); background-position: 0 50%; opacity: 0.5; }
+#left-btn:hover{ opacity: 1; }
+#carousel-cont{ position: absolute; left: 63px; width: auto; height: 108px; overflow: hidden; }
+#carousel{ -webkit-transition: margin-left 0.5s; transition: margin-left 0.5s; }
+#right-btn{ right: 30px; background-image: url("../images/right-btn.png"); background-position: 100% 50%; opacity: 0.5; }
+#right-btn:hover{ opacity: 1; }
+.child-wrapper{ width: 101.5px; height: 108px; display: inline-block; float: left; }
+.child{ margin: -24px 10.5px 0; width: 78.5px; height: 108px; border-color: #fff; border-width: 1px; border-style: solid; border-radius: 2px; background-repeat: no-repeat; background-position: 15.5px 29px; }
+.child p{ text-align: center; width: 68.5px; height: 16px; font-size: 16px; margin-top: 86px; margin-left: 5px; cursor: default; }
+.close{ width: 17px; height: 17px; line-height: 17px; color: #fff; margin: 7px auto 0; cursor: pointer; }
+.close.doc:hover{ color: #1d3d51; }
+.close.pdf:hover{ color: #e74c3c; }
+.close.docx:hover{ color: #3498db; }
+.child.doc{ background-image: url("../images/doc.png"); }
+.child.doc:hover{ border-color: #1d3d51!important; }
+.child.pdf{ background-image: url("../images/pdf.png"); }
+.child.pdf:hover{ border-color: #e74c3c!important; }
+.child.docx{ background-image: url("../images/docx.png"); }
+.child.docx:hover{ border-color: #3498db!important; }
+
+/************************************************* OPTIONS ***********************************************/
+#copies{ display: none; margin: 0 auto 16px; width: 100%; padding: 9px 30px; }
+#copies-tool{ display: none; }
+.tool-btn{ outline: none; background-color: #dce1e6; border-radius: 2px; cursor: pointer; border: none; color: #1d3d51; text-decoration: none; }
+.tool-btn:active{ background-color: #1d3d51; color: #fff; }
+
+/************************************************* PERSONAL ***********************************************/
+#personal{ display: none; margin: 0 auto 16px; padding: 9px 30px 18px; margin-bottom: 16px; }
+#personal input{ width: 100%; height: 26px; padding: 0 5px; margin-top: 11px; font-family: "FuturaPTLight", Calibri, sans-serif; font-size: 16px; border: 1px solid #1d3d51; border-radius: 2px; color: #1d3d51; }
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; margin: 0; }
+#print{ width: 100%; height: 28px; outline: none; background-color: #dce1e6; border-radius: 2px; cursor: pointer; border: none; color: #1d3d51; text-decoration: none; margin-top: 11px; }
+#print:active{ background-color: #1d3d51; color: #fff; }
+
+/************************************************* FOOTER ***********************************************/
+#footer{ width: 100%; background-color: #1d3d51; color: #a7b8ca; font-size: 16px; }
+#footer-cont{ margin: 0 auto; padding: 0 30px; }
+.footer-col-head{ color: #fff; font-family: "FuturaPTBock", Calibri, sans-serif; font-size: 20px; padding-top: 10px; }
+.footer-col-text{ padding-top: 5px; line-height: 21px; }
+.footer-col-text a{ text-decoration: none; color: #a7b8ca; }
+.footer-col-text a:hover{ color: #fff; }
+#socials{ width: 300px; margin: 10px auto 0; text-align: center; }
+#socials a{ text-decoration: none; }
+.soc-img{ vertical-align: middle; padding-right: 11px; }
+#soc-vk{ width: 41px; }
+#soc-tg{ width: 39px; }
+#soc-youtube{ width: 50px; }
+#soc-insta{ width: 39px; }
+#soc-wp{ width: 39px; }
+#soc-fb{ width: 25px; }
+#copyright{ width: 150px; padding: 12px 0; margin: 0 auto; }
+
+/************************************************* ORDER ***********************************************/
+#order{ width: 100%; padding: 9px 30px; margin: 16px auto 16px; }
+.order-id{ font-weight: bold; }
+.contact{ color: #2a5885; font-weight: bold; text-decoration: none; }
+#load-more{ text-align: center; line-height: 28px; width: 100%; height: 28px; outline: none; background-color: #dce1e6; border-radius: 2px; cursor: pointer; border: none; color: #1d3d51; text-decoration: none; margin-top: 11px; }
+#load-more:active{ background-color: #1d3d51; color: #fff; }
+
+/************************************************* TERMINALS ***********************************************/
+#terminals{ width: 100%; padding: 9px 30px; margin: 0 auto 16px; }
+#map{ width:100%; height:345px; margin-top: 13px; }
+
+/************************************************* POPULARITY ***********************************************/
+#popular{ width: 100%; padding: 9px 30px; margin: 0 auto 16px; }
+#popular a{ text-decoration: none; }
+.soc-btn{ line-height: 39px; text-align: center; height: 39px; outline: none; border-radius: 2px; cursor: pointer; border: none; color: #fff; text-decoration: none; margin-top: 11px; }
+#fb-btn{ width: 100%; background-color: #3b5998; }
+#vk-btn{ width: 48%; background-color: #45668e; margin-right: 4%; display: inline-block; }
+#twit-btn{ width: 48%; background-color: #1da1f2; margin-left: 0; display: inline-block; }
+
+/************************************************* FAIL ***********************************************/
+#fail{ width: 100%; padding: 9px 30px; margin: 16px auto; }

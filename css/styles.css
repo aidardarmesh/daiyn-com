@@ -1,0 +1,18 @@
+/************************************************* DESKTOP ***********************************************/
+@media only screen and (min-width: 739px){
+	/************ INDEX ************/
+	#badge{ display: none; }
+	#nav{ height: 147px; }
+	#logo{ width: 739px; height: 147px; background-image: url("../images/logo.png"); }
+	#body{ width: 739px; }
+	#personal input{ width: 250px; margin-right: 10px; }
+	#print{ width: 157px; }
+	#footer-cont{ width: 739px; padding: 0; }
+	.footer-col{ width: 25%; display: inline-block; float: left; }
+	#socials{ clear: both; }
+	/************ ORDER ************/
+	#order{ width: 49%; margin: 16px 2% 16px 0; display: inline-block; float: left; }
+	#popular{ width: 49%; margin: 16px 0 16px; display: inline-block; float: left; }
+	#terminals{ clear: both; }
+}
+/************************************************* BADGE ***********************************************/
